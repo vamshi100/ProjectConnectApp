@@ -1,0 +1,31 @@
+{
+  "name": "connect",
+  "version": "1.0.0",
+  "description": "dev social network",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Vamshi",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
+    "nodemon": "^1.17.5"
+  }
+}
