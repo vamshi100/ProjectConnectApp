@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "dev social network",
   "main": "server.js",
+  "engines": {
+    "npm": "6.2.0",
+    "node": "8.11.3"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
